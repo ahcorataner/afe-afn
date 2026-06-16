@@ -70,3 +70,77 @@ for estado in estados:
         + ", ".join(sorted(fechos[estado]))
         + "}"
     )
+
+    # -----------------------------
+# Simbolos do alfabeto
+# -----------------------------
+
+alfabeto = set()
+
+for t in transicoes:
+    if t[1] != "ε":
+        alfabeto.add(t[1])
+
+# -----------------------------
+# Geracao do AFN equivalente
+# -----------------------------
+
+novas_transicoes = set()
+
+for estado in estados:
+
+    for simbolo in alfabeto:
+
+        destinos = set()
+
+        # Para cada estado do ε-fecho
+        for e in fechos[estado]:
+
+            for t in transicoes:
+
+                origem = t[0]
+                s = t[1]
+                destino = t[2]
+
+                if origem == e and s == simbolo:
+
+                    # Adiciona o ε-fecho do destino
+                    destinos.update(fechos[destino])
+
+        for destino in destinos:
+            novas_transicoes.add(
+                (estado, simbolo, destino)
+            )
+
+# -----------------------------
+# Estados finais equivalentes
+# -----------------------------
+
+novos_finais = set()
+
+for estado in estados:
+
+    for e in fechos[estado]:
+
+        if e in estados_finais:
+            novos_finais.add(estado)
+            break
+
+# -----------------------------
+# Resultado
+# -----------------------------
+
+print("\n" + "=" * 50)
+print("AFN EQUIVALENTE")
+print("=" * 50)
+
+print("\nEstado inicial:")
+print(estado_inicial)
+
+print("\nEstados finais:")
+print(", ".join(sorted(novos_finais)))
+
+print("\nTransicoes:")
+
+for origem, simbolo, destino in sorted(novas_transicoes):
+    print(f"{origem}{simbolo}{destino}")
