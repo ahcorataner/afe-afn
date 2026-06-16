@@ -155,6 +155,7 @@ Transições:
 <p align="center">
   <em>Resultado da transformação do AFε para o AFN equivalente.</em>
 </p>
+
 ---
 
 ## 7. Fundamentação Teórica
@@ -186,7 +187,10 @@ afe-afn/
 ├── ufma.png
 ├── logo.jpg
 │
-└── exemplos/
+└── imagens/
+    ├── entrada.jpg
+    ├── fechos.jpg
+    └── afnequivalente.jpg
 ```
 
 ---
