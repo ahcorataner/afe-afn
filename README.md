@@ -74,7 +74,7 @@ O projeto tem como objetivo desenvolver uma ferramenta capaz de:
 A atividade proposta na disciplina de Linguagens Formais e Autômatos consiste na implementação do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) para um Autômato Finito Não Determinístico (AFN), respeitando as restrições definidas pelo enunciado.
 
 <p align="center">
-  <img src="imagens/enunciado.png" width="800">
+  <img src="imagens/enunciado.jpg" width="800">
 </p>
 
 <p align="center">
@@ -202,7 +202,7 @@ afe-afn/
 ├── logo.jpg
 │
 └── imagens/
-    ├── enunciado.png
+    ├── enunciado.jpg
     ├── entrada.jpg
     ├── fechos.jpg
     └── afnequivalente.jpg
