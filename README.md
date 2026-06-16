@@ -148,43 +148,37 @@ Transições:
 
 ### Entrada do AFε
 
-<div align="center">
+<p align="center">
+  <img src="imagens/entrada.jpg" width="400">
+</p>
 
-<img src="imagens/entrada.jpg" width="400">
-
-<br><br>
-
-<em><strong>Figura 2.</strong> Leitura dos estados do autômato, estado inicial, função programa e estados finais.</em>
-
-</div>
+<p align="center">
+  <em><strong>Figura 2.</strong> Leitura dos estados do autômato, estado inicial, função programa e estados finais.</em>
+</p>
 
 ---
 
 ### AFε Original e Cálculo dos ε-Fechos
 
-<div align="center">
+<p align="center">
+  <img src="imagens/fechos.jpg" width="400">
+</p>
 
-<img src="imagens/fechos.jpg" width="400">
-
-<br><br>
-
-<em><strong>Figura 3.</strong> Exibição do AFε original e cálculo dos ε-fechos de cada estado.</em>
-
-</div>
+<p align="center">
+  <em><strong>Figura 3.</strong> Exibição do AFε original e cálculo dos ε-fechos de cada estado.</em>
+</p>
 
 ---
 
 ### AFN Equivalente
 
-<div align="center">
+<p align="center">
+  <img src="imagens/afnequivalente.jpg" width="400">
+</p>
 
-<img src="imagens/afnequivalente.jpg" width="400">
-
-<br><br>
-
-<em><strong>Figura 4.</strong> Resultado da transformação do AFε para o AFN equivalente sem transições ε.</em>
-
-</div>
+<p align="center">
+  <em><strong>Figura 4.</strong> Resultado da transformação do AFε para o AFN equivalente sem transições ε.</em>
+</p>
 
 ---
 
