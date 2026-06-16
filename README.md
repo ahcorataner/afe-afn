@@ -192,9 +192,9 @@ O algoritmo executa as seguintes etapas:
 
 ## 11. Contribuição
 
-A principal contribuição deste trabalho consiste na implementação computacional do processo de eliminação de transições ε, permitindo visualizar e validar a equivalência entre um AFε e seu respectivo AFN.
+A principal contribuição deste trabalho consiste na implementação computacional do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) em um Autômato Finito Não Determinístico (AFN), permitindo a eliminação das transições ε e a obtenção de um autômato equivalente.
 
-Além disso, o projeto reforça conceitos fundamentais da Teoria da Computação e dos Autômatos Finitos.
+Além de demonstrar na prática o cálculo do ε-fecho e a construção do AFN resultante, o projeto reforça conceitos fundamentais da disciplina de Linguagens Formais e Autômatos, relacionados à representação, manipulação e equivalência de autômatos finitos.
 
 ---
 
