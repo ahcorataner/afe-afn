@@ -73,13 +73,23 @@ O projeto tem como objetivo desenvolver uma ferramenta capaz de:
 
 A atividade proposta na disciplina de **Linguagens Formais e Autômatos** consiste na implementação do algoritmo de transformação de um **Autômato Finito com transições Épsilon (AFε)** para um **Autômato Finito Não Determinístico (AFN)**, respeitando as restrições estabelecidas no enunciado da atividade.
 
-<p align="center">
-  <img src="imagens/enunciado.jpg" width="600">
-</p>
+<div align="center">
 
-<p align="center">
-  <em><strong>Figura 1.</strong> Enunciado da atividade proposta para a 3ª avaliação da disciplina de Linguagens Formais e Autômatos.</em>
-</p>
+<table>
+<tr>
+<td align="center">
+
+<img src="imagens/enunciado.jpg" width="500">
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<em><strong>Figura 1.</strong> Enunciado da atividade proposta para a 3ª avaliação da disciplina de Linguagens Formais e Autômatos.</em>
+
+</div>
 
 ---
 
@@ -138,37 +148,43 @@ Transições:
 
 ### Entrada do AFε
 
-<p align="center">
-  <img src="imagens/entrada.jpg" width="800">
-</p>
+<div align="center">
 
-<p align="center">
-  <em>Leitura dos estados, estado inicial, função programa e estados finais.</em>
-</p>
+<img src="imagens/entrada.jpg" width="400">
+
+<br><br>
+
+<em><strong>Figura 2.</strong> Leitura dos estados do autômato, estado inicial, função programa e estados finais.</em>
+
+</div>
 
 ---
 
 ### AFε Original e Cálculo dos ε-Fechos
 
-<p align="center">
-  <img src="imagens/fechos.jpg" width="800">
-</p>
+<div align="center">
 
-<p align="center">
-  <em>Exibição do autômato original e cálculo dos ε-fechos de cada estado.</em>
-</p>
+<img src="imagens/fechos.jpg" width="400">
+
+<br><br>
+
+<em><strong>Figura 3.</strong> Exibição do AFε original e cálculo dos ε-fechos de cada estado.</em>
+
+</div>
 
 ---
 
 ### AFN Equivalente
 
-<p align="center">
-  <img src="imagens/afnequivalente.jpg" width="800">
-</p>
+<div align="center">
 
-<p align="center">
-  <em>Resultado da transformação do AFε para o AFN equivalente.</em>
-</p>
+<img src="imagens/afnequivalente.jpg" width="400">
+
+<br><br>
+
+<em><strong>Figura 4.</strong> Resultado da transformação do AFε para o AFN equivalente sem transições ε.</em>
+
+</div>
 
 ---
 
