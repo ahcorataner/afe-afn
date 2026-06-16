@@ -71,14 +71,14 @@ O projeto tem como objetivo desenvolver uma ferramenta capaz de:
 
 ## 3. Enunciado da Atividade
 
-A atividade proposta na disciplina de Linguagens Formais e Autômatos consiste na implementação do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) para um Autômato Finito Não Determinístico (AFN), respeitando as restrições definidas pelo enunciado.
+A atividade proposta na disciplina de **Linguagens Formais e Autômatos** consiste na implementação do algoritmo de transformação de um **Autômato Finito com transições Épsilon (AFε)** para um **Autômato Finito Não Determinístico (AFN)**, respeitando as restrições estabelecidas no enunciado da atividade.
 
 <p align="center">
-  <img src="imagens/enunciado.jpg" width="800">
+  <img src="imagens/enunciado.jpg" width="600">
 </p>
 
 <p align="center">
-  <em>Enunciado da atividade proposta para a 3ª avaliação.</em>
+  <em><strong>Figura 1.</strong> Enunciado da atividade proposta para a 3ª avaliação da disciplina de Linguagens Formais e Autômatos.</em>
 </p>
 
 ---
