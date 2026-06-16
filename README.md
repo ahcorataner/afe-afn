@@ -36,7 +36,7 @@ Renata Costa Rocha
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Status-Concluído-blue?style=flat-square">">
   <img src="https://img.shields.io/badge/Projeto-Acadêmico-green?style=flat-square">
   <img src="https://img.shields.io/badge/Python-3.x-yellow?style=flat-square">
   <img src="https://img.shields.io/badge/GitHub-Versionamento-black?style=flat-square">
