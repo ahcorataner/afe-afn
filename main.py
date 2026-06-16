@@ -47,6 +47,18 @@ def ler_transicoes():
     return transicoes
 
 
+def obter_alfabeto(transicoes):
+    alfabeto = set()
+
+    for transicao in transicoes:
+        simbolo = transicao[1]
+
+        if simbolo != "ε":
+            alfabeto.add(simbolo)
+
+    return alfabeto
+
+
 def validar_entrada(estados, estado_inicial, transicoes, estados_finais):
     if len(estados) > 5:
         print("Erro: o AFε deve possuir no máximo 5 estados.")
@@ -67,7 +79,6 @@ def validar_entrada(estados, estado_inicial, transicoes, estados_finais):
 
     for transicao in transicoes:
         origem = transicao[0]
-        simbolo = transicao[1]
         destino = transicao[2]
 
         if origem not in estados or destino not in estados:
@@ -101,18 +112,6 @@ def calcular_epsilon_fecho(estado, transicoes):
                     pilha.append(destino)
 
     return fecho
-
-
-def obter_alfabeto(transicoes):
-    alfabeto = set()
-
-    for transicao in transicoes:
-        simbolo = transicao[1]
-
-        if simbolo != "ε":
-            alfabeto.add(simbolo)
-
-    return alfabeto
 
 
 def gerar_transicoes_afn(estados, transicoes, fechos, alfabeto):
@@ -156,6 +155,18 @@ def imprimir_conjunto(nome, conjunto):
         print(f"{nome}: " + ", ".join(sorted(conjunto)))
 
 
+def imprimir_transicoes(transicoes):
+    if len(transicoes) == 0:
+        print("Nenhuma transição.")
+    else:
+        for transicao in sorted(transicoes):
+            if isinstance(transicao, tuple):
+                origem, simbolo, destino = transicao
+                print(f"{origem}{simbolo}{destino}")
+            else:
+                print(transicao)
+
+
 print("=" * 50)
 print("TRANSFORMAÇÃO DE AFε PARA AFN")
 print("=" * 50)
@@ -174,20 +185,25 @@ if not validar_entrada(estados, estado_inicial, transicoes, estados_finais):
     print("\nPrograma encerrado devido a erro na entrada.")
     exit()
 
-print("\n" + "-" * 50)
-print("DADOS INFORMADOS")
-print("-" * 50)
+alfabeto = obter_alfabeto(transicoes)
 
-imprimir_conjunto("Estados", estados)
+print("\n" + "=" * 50)
+print("AFε ORIGINAL")
+print("=" * 50)
+
+imprimir_conjunto("\nEstados", estados)
+imprimir_conjunto("Alfabeto encontrado", alfabeto)
 print("Estado inicial:", estado_inicial)
-print("Transições:", transicoes)
 imprimir_conjunto("Estados finais", estados_finais)
+
+print("\nFunção programa:")
+imprimir_transicoes(transicoes)
 
 fechos = {}
 
-print("\n" + "-" * 50)
+print("\n" + "=" * 50)
 print("ε-FECHOS")
-print("-" * 50)
+print("=" * 50)
 
 for estado in estados:
     fechos[estado] = calcular_epsilon_fecho(estado, transicoes)
@@ -197,8 +213,6 @@ for estado in estados:
         + ", ".join(sorted(fechos[estado]))
         + "}"
     )
-
-alfabeto = obter_alfabeto(transicoes)
 
 novas_transicoes = gerar_transicoes_afn(
     estados,
@@ -217,13 +231,10 @@ print("\n" + "=" * 50)
 print("AFN EQUIVALENTE")
 print("=" * 50)
 
-print("\nEstado inicial:")
-print(estado_inicial)
+imprimir_conjunto("\nEstados", estados)
+imprimir_conjunto("Alfabeto", alfabeto)
+print("Estado inicial:", estado_inicial)
+imprimir_conjunto("Estados finais", novos_finais)
 
-print("\nEstados finais:")
-print(", ".join(sorted(novos_finais)))
-
-print("\nTransições:")
-
-for origem, simbolo, destino in sorted(novas_transicoes):
-    print(f"{origem}{simbolo}{destino}")
+print("\nFunção programa sem transições ε:")
+imprimir_transicoes(novas_transicoes)
