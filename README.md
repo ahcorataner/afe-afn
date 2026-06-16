@@ -118,10 +118,46 @@ Transições:
 0 b 2
 1 b 2
 ```
+---
+
+## 6. Capturas de Tela
+
+### Entrada do AFε
+
+<p align="center">
+  <img src="imagens/entrada.jpg" width="800">
+</p>
+
+<p align="center">
+  <em>Leitura dos estados, estado inicial, função programa e estados finais.</em>
+</p>
 
 ---
 
-## 6. Fundamentação Teórica
+### AFε Original e Cálculo dos ε-Fechos
+
+<p align="center">
+  <img src="imagens/fechos.jpg" width="800">
+</p>
+
+<p align="center">
+  <em>Exibição do autômato original e cálculo dos ε-fechos de cada estado.</em>
+</p>
+
+---
+
+### AFN Equivalente
+
+<p align="center">
+  <img src="imagens/afnequivalente.jpg" width="800">
+</p>
+
+<p align="center">
+  <em>Resultado da transformação do AFε para o AFN equivalente.</em>
+</p>
+---
+
+## 7. Fundamentação Teórica
 
 Os Autômatos Finitos com transições Épsilon (AFε) permitem mudanças de estado sem o consumo de símbolos da cadeia de entrada.
 
@@ -131,7 +167,7 @@ A partir desses conjuntos, novas transições são construídas para gerar um Au
 
 ---
 
-## 7. Tecnologias Utilizadas
+## 8. Tecnologias Utilizadas
 
 - Python;
 - Visual Studio Code (VS Code);
@@ -140,7 +176,7 @@ A partir desses conjuntos, novas transições são construídas para gerar um Au
 
 ---
 
-## 8. Estrutura do Projeto
+## 9. Estrutura do Projeto
 
 ```text
 afe-afn/
@@ -155,7 +191,7 @@ afe-afn/
 
 ---
 
-## 9. Como Executar
+## 10. Como Executar
 
 Clone o repositório:
 
@@ -177,7 +213,7 @@ python main.py
 
 ---
 
-## 10. Funcionamento do Algoritmo
+## 11. Funcionamento do Algoritmo
 
 O algoritmo executa as seguintes etapas:
 
@@ -190,7 +226,7 @@ O algoritmo executa as seguintes etapas:
 
 ---
 
-## 11. Contribuição
+## 12. Contribuição
 
 A principal contribuição deste trabalho consiste na implementação computacional do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) em um Autômato Finito Não Determinístico (AFN), permitindo a eliminação das transições ε e a obtenção de um autômato equivalente.
 
@@ -198,7 +234,7 @@ Além de demonstrar na prática o cálculo do ε-fecho e a construção do AFN r
 
 ---
 
-## 12. Trabalhos Futuros
+## 13. Trabalhos Futuros
 
 - Implementação da transformação AFN → AFD;
 - Minimização de AFD;
@@ -208,7 +244,7 @@ Além de demonstrar na prática o cálculo do ε-fecho e a construção do AFN r
 
 ---
 
-## 13. Licença
+## 14. Licença
 
 Este projeto possui finalidade acadêmica e foi desenvolvido no contexto da disciplina de Linguagens Formais e Autômatos do curso de Engenharia da Computação da Universidade Federal do Maranhão (UFMA).
 
