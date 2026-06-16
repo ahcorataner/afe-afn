@@ -69,7 +69,21 @@ O projeto tem como objetivo desenvolver uma ferramenta capaz de:
 
 ---
 
-## 3. Restrições do Problema
+## 3. Enunciado da Atividade
+
+A atividade proposta na disciplina de Linguagens Formais e Autômatos consiste na implementação do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) para um Autômato Finito Não Determinístico (AFN), respeitando as restrições definidas pelo enunciado.
+
+<p align="center">
+  <img src="imagens/enunciado.png" width="800">
+</p>
+
+<p align="center">
+  <em>Enunciado da atividade proposta para a 3ª avaliação.</em>
+</p>
+
+---
+
+## 4. Restrições do Problema
 
 O AFε de entrada possui:
 
@@ -79,7 +93,7 @@ O AFε de entrada possui:
 
 ---
 
-## 4. Exemplo de Entrada
+## 5. Exemplo de Entrada
 
 ```text
 Informe os estados do autômato:
@@ -99,7 +113,7 @@ Informe os estados finais:
 
 ---
 
-## 5. Exemplo de Saída
+## 6. Exemplo de Saída
 
 ```text
 ε-fecho(0) = {0, 2}
@@ -120,7 +134,7 @@ Transições:
 ```
 ---
 
-## 6. Capturas de Tela
+## 7. Capturas de Tela
 
 ### Entrada do AFε
 
@@ -158,7 +172,7 @@ Transições:
 
 ---
 
-## 7. Fundamentação Teórica
+## 8. Fundamentação Teórica
 
 Os Autômatos Finitos com transições Épsilon (AFε) permitem mudanças de estado sem o consumo de símbolos da cadeia de entrada.
 
@@ -168,7 +182,7 @@ A partir desses conjuntos, novas transições são construídas para gerar um Au
 
 ---
 
-## 8. Tecnologias Utilizadas
+## 9. Tecnologias Utilizadas
 
 - Python;
 - Visual Studio Code (VS Code);
@@ -177,7 +191,7 @@ A partir desses conjuntos, novas transições são construídas para gerar um Au
 
 ---
 
-## 9. Estrutura do Projeto
+## 10. Estrutura do Projeto
 
 ```text
 afe-afn/
@@ -188,6 +202,7 @@ afe-afn/
 ├── logo.jpg
 │
 └── imagens/
+    ├── enunciado.png
     ├── entrada.jpg
     ├── fechos.jpg
     └── afnequivalente.jpg
@@ -195,7 +210,7 @@ afe-afn/
 
 ---
 
-## 10. Como Executar
+## 11. Como Executar
 
 Clone o repositório:
 
@@ -217,7 +232,7 @@ python main.py
 
 ---
 
-## 11. Funcionamento do Algoritmo
+## 12. Funcionamento do Algoritmo
 
 O algoritmo executa as seguintes etapas:
 
@@ -230,7 +245,7 @@ O algoritmo executa as seguintes etapas:
 
 ---
 
-## 12. Contribuição
+## 13. Contribuição
 
 A principal contribuição deste trabalho consiste na implementação computacional do algoritmo de transformação de um Autômato Finito com transições Épsilon (AFε) em um Autômato Finito Não Determinístico (AFN), permitindo a eliminação das transições ε e a obtenção de um autômato equivalente.
 
@@ -238,7 +253,7 @@ Além de demonstrar na prática o cálculo do ε-fecho e a construção do AFN r
 
 ---
 
-## 13. Trabalhos Futuros
+## 14. Trabalhos Futuros
 
 - Implementação da transformação AFN → AFD;
 - Minimização de AFD;
@@ -248,7 +263,7 @@ Além de demonstrar na prática o cálculo do ε-fecho e a construção do AFN r
 
 ---
 
-## 14. Licença
+## 15. Licença
 
 Este projeto possui finalidade acadêmica e foi desenvolvido no contexto da disciplina de Linguagens Formais e Autômatos do curso de Engenharia da Computação da Universidade Federal do Maranhão (UFMA).
 
